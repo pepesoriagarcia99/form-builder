@@ -1,0 +1,25 @@
+.form {
+  &__input {
+    width: 100%;
+
+    &--box {
+      box-sizing: border-box;
+    }
+
+    &--box-error {
+      border: 2px solid $error;
+    }
+  }
+
+  &__label {
+
+    &--requiered {
+      color: #FFB728
+    }
+  }
+
+  &__error {
+    font-size: x-small;
+    color: $error;
+  }
+}
