@@ -1,4 +1,4 @@
-# form-builder
+# VUE form-builder
 
 ## Project setup
 ```

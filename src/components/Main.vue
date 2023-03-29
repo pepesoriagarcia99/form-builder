@@ -1,7 +1,6 @@
 <template>
   <div class="main">
-    <h1>Formulario test</h1>
-    <Form :data="data" />
+    <Form :data="data" @submit="submit" @change="change"/>
   </div>
 </template>
 
@@ -22,6 +21,14 @@ export default {
   created() {
     this.data = simple_form;
   },
+  methods: {
+    submit(event){
+      console.log('submit', event);
+    },
+    change(event){
+      console.log('change', event);
+    }
+  }
 };
 </script>
 
